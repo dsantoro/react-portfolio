@@ -1,3 +1,3 @@
-export default returnScroll =  function returnScrollTop() {
+export default returnScroll() {
     return document.body.scrollTop;
 }

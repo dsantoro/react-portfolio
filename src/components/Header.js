@@ -7,13 +7,10 @@ class Header extends Component {
 
     render(){
 
-        function returnScrollTop() {
-            return document.body.scrollTop;
-        }
-
         function addMenuABackground(){
+
             
-            if(returnScrollTop() > 0) {
+            if(window.scrollY > 0) {
                 document.querySelector('.header').classList.add('scrolled');
             } else {
                 document.querySelector('.header').classList.remove('scrolled');
@@ -49,7 +46,7 @@ class Header extends Component {
                                     <Link to="/contact">Contact</Link>
                                 </li>
                                 <li>
-                                    <Link to="" target="blank_">
+                                    <Link to="https://github.com/dsantoro" target="blank_">
                                         <FaGithub className="github" />
                                     </Link>
                                 </li>

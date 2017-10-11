@@ -11,7 +11,7 @@ class Footer extends Component {
                     <div className="row">
 
                         <div className="small-12 columns">
-                            aaa
+                            <p>Made with &#9825; using ReactJS</p>
                         </div>
                     </div>
                 </footer>

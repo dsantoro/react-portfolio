@@ -2,22 +2,12 @@ import React, { Component } from 'react';
 
 class Hero extends Component {
 
-    render(){
+    componentWillUnmount() {
 
-        function titleEffect(){
+        console.log('desmontou')
+    }
 
-            const title = document.querySelector('.hero hgroup');
-            let offY = window.scrollY;
-
-            if(offY <= 700) {
-
-                title.style.opacity = 1 - (offY/700)
-                title.style.transform =  `translateY(${ offY/3 }px)`;
-            }
-        }
-
-        window.addEventListener('scroll', () => titleEffect(), true);
-        window.addEventListener('load', () => titleEffect(), true);
+    render(){        
 
         return(
             <div className="hero flex">
